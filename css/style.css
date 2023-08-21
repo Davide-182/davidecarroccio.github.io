@@ -1,0 +1,116 @@
+/* Reset dei margini e dei padding */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Stilizzazione dell'intestazione */
+header {
+    background-color: #ff9900;
+    color: #fff;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+/* Stilizzazione della barra di navigazione */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #ffcc66;
+    padding: 1rem 0;
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff9900;
+}
+
+/* Stilizzazione del contenuto principale */
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    text-align: center;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Stilizzazione del piè di pagina */
+footer {
+    text-align: center;
+    background-color: #ff9900;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+/* Stilizzazione delle sezioni aggiuntive */
+#progetti, #tecnologie, #blog {
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#progetti h3, #tecnologie h3, #blog h3 {
+    color: #ff9900;
+}
+
+#progetti ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+}
+
+#tecnologie p {
+    font-style: italic;
+    color: #888;
+}
+
+#blog a {
+    color: #66ccff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#blog a:hover {
+    color: #ff9900;
+}
+
+/* Stilizzazione della sezione Contatti */
+#contatti {
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contatti h3 {
+    color: #ff9900;
+}
+
+#contatti p {
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+#contatti ul {
+    list-style-type: none;
+    padding-left: 1rem;
+}
+
+#contatti li {
+    margin-bottom: 0.5rem;
+}
