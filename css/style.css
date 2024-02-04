@@ -1,35 +1,64 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 /* Reset dei margini e dei padding */
-body, h1, h2, p {
+body, h1, h2, h3, p, ul, li, a {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
 }
 
 /* Stilizzazione dell'intestazione */
-header {
-    background-color: #ff9900;
-    color: #fff;
+body {
+    background-image: url("../images/background2.jpg");
+    background-repeat: no-repeat;
+    background-position: top ;
+    background-attachment: scroll;
+    background-size: cover;
+    color: white;
     text-align: center;
-    padding: 3rem 0;
+    padding: 4rem 0;
 }
+
+/* Stilizzazione specifica per sezioni con sfondo aqua */
+.section-aqua {
+    background-color: rgb(25, 192, 192);
+    /* altre proprietà come desiderato, escludendo quelle che causano conflitto */
+}
+
+/* Stilizzazione per altre sezioni */
+section {
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: #f9f9f9; /* Sfondo grigio per default */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 
 /* Stilizzazione della barra di navigazione */
 nav ul {
-    list-style: none;
+    position: fixed; /* Imposta il posizionamento fisso */
+    top: 0; /* Posiziona la barra di navigazione in alto */
+    left: 0; /* Posiziona la barra di navigazione a sinistra */
+    right: 0; /* Estende la larghezza al massimo */
     display: flex;
     justify-content: center;
-    background-color: #ffcc66;
+    background-color:#246574;
     padding: 1rem 0;
 }
 
+
 nav li {
-    margin: 0 1rem;
+    margin: 0 2rem;
 }
 
 nav a {
-    text-decoration: none;
-    color: #444;
+    color: white;
     font-weight: bold;
-    transition: color 0.3s;
+    transition: color 0.3s ease-in-out;
 }
 
 nav a:hover {
@@ -38,79 +67,104 @@ nav a:hover {
 
 /* Stilizzazione del contenuto principale */
 main {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 2rem auto;
     padding: 1rem;
     text-align: center;
-    background-color: #f4f4f4;
+}
+
+section {
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: #f9f9f9;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+    color: #333;
 }
 
 /* Stilizzazione del piè di pagina */
 footer {
     text-align: center;
-    background-color: #ff9900;
-    color: #fff;
+    background-color: #333;
+    color: white;
     padding: 1rem 0;
 }
 
-/* Stilizzazione delle sezioni aggiuntive */
-#progetti, #tecnologie, #blog {
-    margin-top: 2rem;
-    padding: 2rem;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+/* Media Queries for Responsive Design */
+
+/* Dropdown Button */
+.dropbtn {
+    cursor: pointer;
 }
 
-#progetti h3, #tecnologie h3, #blog h3 {
-    color: #ff9900;
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
 }
 
-#progetti ul {
-    list-style-type: disc;
-    padding-left: 2rem;
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
 
-#tecnologie p {
-    font-style: italic;
-    color: #888;
-}
-
-#blog a {
-    color: #66ccff;
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
     text-decoration: none;
-    transition: color 0.3s;
+    display: block;
 }
 
-#blog a:hover {
-    color: #ff9900;
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
 }
 
-/* Stilizzazione della sezione Contatti */
-#contatti {
-    margin-top: 2rem;
-    padding: 2rem;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
-#contatti h3 {
-    color: #ff9900;
+/* Add a background color to the dropdown button on hover */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
 }
 
-#contatti p {
-    color: #555;
-    margin-bottom: 1rem;
+/* Stilizzazione delle immagini PNG per dispositivi desktop */
+@media (min-width: 769px) {
+    .technology-icons img {
+        width: 80px;
+        margin: 0 5px;
+    }
 }
 
-#contatti ul {
-    list-style-type: none;
-    padding-left: 1rem;
+/* Adjust the size of the technology icons */
+.technology-icons img {
+    width: 120px;
+    height: auto;
+    margin: 0 10px;
+    vertical-align: middle;
+    transition: transform 0.3s ease-in-out;
 }
 
-#contatti li {
-    margin-bottom: 0.5rem;
+/* Apply the floating effect on hover */
+.technology-icons img:hover {
+    transform: translateY(-10px);
+}
+
+/* Responsive adjustments for the technology icons */
+@media (max-width: 768px) {
+    .technology-icons img {
+        width: 80px;
+        margin: 0 5px;
+    }
 }

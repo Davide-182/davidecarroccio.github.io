@@ -1,65 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Progetti</a>
+            <div class="dropdown-content">
+                <a href="progetto1.html">Automazione Deployment con Ansible</a>
+                <a href="progetto2.html">Gestione Cluster Kubernetes</a>
+                <a href="progetto3.html">Progetti in Python</a>
+                <a href="progetto4.html">Automazione Deployment con CloudFormation</a>
+                <!-- More projects can be added here -->
+            </div>
+        </li>
+        <li><a href="#contatti">Contatti</a></li>
+    </ul>
+</nav>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Davide Carroccio - DevOps Engineer Jr</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
     <header>
-        <h1>Ciao, sono Davide Carroccio</h1>
+        <h1>Davide Carroccio</h1>
         <p>DevOps Engineer appassionato di automazione e deployment.</p>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#progetti">Progetti</a></li>
-            <li><a href="#contatti">Contatti</a></li> <!-- Aggiungi il collegamento a Contatti -->
-        </ul>
-    </nav>
     
+ 
     <main>
-        <h2>Benvenuti nel Mio Sito Personale</h2>
-        <p>Sono un DevOps Engineer con una forte passione per l'automazione dei processi di deployment e la gestione dell'infrastruttura.</p>
-        <p>Scopri di più sui miei progetti e le mie esperienze professionali!</p>
+        <section class="section-aqua" id="intro">
+            <h2>Benvenuti nel Mio Sito Personale</h2>
+            <p>Sono un DevOps Engineer con una forte passione per l'automazione dei processi di deployment e la gestione dell'infrastruttura.</p>
+        </section>
         
-        <!-- Aggiungi qui la sezione dei progetti, tecnologie familiari, blog, etc. -->
-        <section id="progetti">
+        <section class="section-aqua" id="progetti">
             <h3>Progetti Recenti</h3>
-            <ul>
-                <li><a href="progetto1.html">Automazione Deployment con Ansible</a></li>
-                <li><a href="progetto2.html">Gestione Cluster Kubernetes</a></li>
-                <li><a href="progetto3.html">Progetti in Python</a></li>
-                <li><a href="progetto4.html">Automazione Deployment con CloudFormation</a></li>
-                <!-- Aggiungi altri progetti qui -->
-            </ul>
+            <div class="project-list">
+                <div class="project-card">
+                    <a href="progetto1.html">Automazione Deployment con Ansible</a>
+                    <p>Breve descrizione del progetto...</p>
+                </div>
+                <div class="project-card">
+                    <a href="progetto2.html">Gestione Cluster Kubernetes</a>
+                    <p>Breve descrizione del progetto...</p>
+                </div>
+                <div class="project-card">
+                    <a href="progetto3.html">Progetti in Python</a>
+                    <p>Breve descrizione del progetto...</p>
+                </div>
+                <div class="project-card">
+                    <a href="progetto4.html">Automazione Deployment con CloudFormation</a>
+                    <p>Breve descrizione del progetto...</p>
+                </div>
+            </div>
         </section>
-        
-        
-        <section id="tecnologie">
+
+        <section class="section-aqua" id="tecnologie">
             <h3>Tecnologie Familiari</h3>
-            <p>Ho esperienza con strumenti come Docker, Kubernetes, Ansible e Jenkins.</p>
-            <!-- Aggiungi altre tecnologie familiari qui -->
+            <div class="technology-icons">
+                <img src="images/docker.png" alt="Icona Docker">
+                <img src="images/AWS.png" alt="Icona Amazon Web Services">
+                <img src="images/ansible.png" alt="Icona Ansible">
+                <img src="images/jenkins.png" alt="Icona Jenkins">
+                <img src="images/terraform.png" alt="Icona Terraform">
+                <img src="images/aws-lambda.png" alt="Icona Lambda">
+                <!-- Aggiungi attributi alt per le altre immagini -->
+            </div>
         </section>
-        
-        <section id="blog">
-            <h3>Blog Tecnico</h3>
-            <p>Condivido le mie esperienze e i miei consigli su automazione e deployment su <a href="#">devopsblog.com</a>.</p>
-        </section>
-        
-        <section id="contatti">
+
+        <section class="section-aqua" id="contatti">
             <h3>Contatti</h3>
             <p>Se desideri metterti in contatto con me, puoi farlo tramite i seguenti canali:</p>
+            <!-- Contact items will be listed here -->
             <ul>
                 <li>Email: <a href="mailto:carrocciodavide98@gmail.com">carrocciodavide98@gmail.com</a></li>
                 <li>LinkedIn: <a href="https://www.linkedin.com/in/davidecarroccio">linkedin.com/in/davidecarroccio</a></li>
                 <li>GitHub: <a href="https://github.com/Davide-182">github.com/Davide-182</a></li>
             </ul>
         </section>
-        
     </main>
+
     <footer>
         <p>&copy; 2023 Davide Carroccio. Tutti i diritti riservati.</p>
     </footer>
-    <script type="module" src="https://geminiaisolutions.com/js/chatbotfree.min.js"></script>
 </body>
 </html>
